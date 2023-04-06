@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<ArrayOfViolin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Violin>
+    <Name>Скрипка VBS</Name>
+    <Id>0</Id>
+    <Price>141444</Price>
+    <Age>2023-04-05T18:54:30.5002566+03:00</Age>
+    <Master>
+      <Id>0</Id>
+      <Name>Сергей</Name>
+      <Surname>Петренко</Surname>
+      <Midlename>Сергеевич</Midlename>
+    </Master>
+  </Violin>
+  <Violin>
+    <Name>Скрипка New Style</Name>
+    <Id xsi:nil="true" />
+    <Price>200000</Price>
+    <Age>2023-04-05T00:00:00</Age>
+    <Master>
+      <Id>0</Id>
+      <Name>Сергей</Name>
+      <Surname>Петренко</Surname>
+      <Midlename>Сергеевич</Midlename>
+    </Master>
+  </Violin>
+  <Violin>
+    <Name>Last create at 20:32</Name>
+    <Id xsi:nil="true" />
+    <Price>23542234</Price>
+    <Age>2023-04-05T00:00:00</Age>
+    <Master>
+      <Id>0</Id>
+      <Name>Сергей</Name>
+      <Surname>Петренко</Surname>
+      <Midlename>Сергеевич</Midlename>
+    </Master>
+  </Violin>
+  <Violin>
+    <Name>Скрипка Old Stradivary school</Name>
+    <Id xsi:nil="true" />
+    <Price>9900000</Price>
+    <Age>1753-01-01T00:00:00</Age>
+    <Master>
+      <Id>1</Id>
+      <Name>Григорий</Name>
+      <Surname>Андреев</Surname>
+      <Midlename>Алксандрович</Midlename>
+    </Master>
+  </Violin>
+</ArrayOfViolin>

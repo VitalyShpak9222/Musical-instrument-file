@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<ArrayOfMaster xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Master>
+    <Id>0</Id>
+    <Name>Сергей</Name>
+    <Surname>Петренко</Surname>
+    <Midlename>Сергеевич</Midlename>
+  </Master>
+  <Master>
+    <Id>1</Id>
+    <Name>Григорий</Name>
+    <Surname>Андреев</Surname>
+    <Midlename>Алксандрович</Midlename>
+  </Master>
+  <Master>
+    <Id>2</Id>
+    <Name>Афанасий</Name>
+    <Surname>Афанисивич</Surname>
+    <Midlename>Фет</Midlename>
+  </Master>
+</ArrayOfMaster>
