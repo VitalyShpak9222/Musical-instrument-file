@@ -12,7 +12,6 @@ namespace XML
         public int? Id { get; set; }
         public decimal? Price { get; set; }
         public DateTime? Age { get; set; }
-
         public Master Master { get; set; }
 
         public Instrument()

@@ -50,6 +50,12 @@
     <Compile Include="Drum.cs" />
     <Compile Include="Flute.cs" />
     <Compile Include="Instrument.cs" />
+    <Compile Include="InstrumentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstrumentForm.Designer.cs">
+      <DependentUpon>InstrumentForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Master.cs" />
     <Compile Include="TranslateToTDataable.cs" />
     <Compile Include="Violin.cs" />
@@ -63,6 +69,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="InstrumentForm.resx">
+      <DependentUpon>InstrumentForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="XMLForm.resx">
       <DependentUpon>XMLForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -95,7 +104,20 @@
     <Analyzer Include="..\..\..\..\..\..\Program Files %28x86%29\MySQL\MySQL Connector NET 8.0.32\Assemblies\v4.8\MySql.Data.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="bin\Debug\xml.xml" />
+    <Content Include="bin\Debug\DrumsVolume\drum1.wav" />
+    <Content Include="bin\Debug\DrumsVolume\drum2.wav" />
+    <Content Include="bin\Debug\DrumsVolume\drum3.wav" />
+    <Content Include="bin\Debug\DrumsVolume\drum4.wav" />
+    <Content Include="bin\Debug\DrumsVolume\drum5.wav" />
+    <Content Include="bin\Debug\FlutesVolume\flute1.wav" />
+    <Content Include="bin\Debug\FlutesVolume\flute2.wav" />
+    <Content Include="bin\Debug\FlutesVolume\flute3.wav" />
+    <Content Include="bin\Debug\FlutesVolume\flute4.wav" />
+    <Content Include="bin\Debug\FlutesVolume\flute5.wav" />
+    <Content Include="bin\Debug\FlutesVolume\flute6.wav" />
+    <Content Include="bin\Debug\ViolinsVolume\Violin1.wav" />
+    <Content Include="bin\Debug\ViolinsVolume\Violin2.wav" />
+    <Content Include="bin\Debug\ViolinsVolume\Violin3.wav" />
     <Content Include="xml.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

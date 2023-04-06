@@ -9,6 +9,7 @@ namespace XML
     {
         private static XMLDocument document = new XMLDocument();
         private Dictionary<string, DataTable> dataSourseTabel = new Dictionary<string, DataTable>();
+        private static bool flagDownload = false;
 
         public XMLForm()
         {
@@ -189,11 +190,19 @@ namespace XML
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            int indexLine = e.RowIndex;
-            labelOpisanieName.Text = dataGridView1.Rows[indexLine].Cells[0].Value.ToString();
-            labelOpisaniePrice.Text = dataGridView1.Rows[indexLine].Cells[1].Value.ToString();
-            labelOpisanieDataBirth.Text = dataGridView1.Rows[indexLine].Cells[2].Value.ToString();
-            labelOpisanieMaster.Text = dataGridView1.Rows[indexLine].Cells[3].Value.ToString();
+            if (comboBoxTabelVariant.Text != document.GetArrayType()[2]) 
+            {
+                int indexLine = e.RowIndex;
+                InstrumentForm form = InstrumentForm.GetInstrument();
+                string type = dataGridView1.Rows[indexLine].Cells[0].Value.ToString();
+                string name = dataGridView1.Rows[indexLine].Cells[1].Value.ToString();
+                string price = dataGridView1.Rows[indexLine].Cells[2].Value.ToString();
+                string age = dataGridView1.Rows[indexLine].Cells[3].Value.ToString();
+                string fnm = dataGridView1.Rows[indexLine].Cells[4].Value.ToString();
+                string link = dataGridView1.Rows[indexLine].Cells[5].Value.ToString();
+                form.SetInfoForm(type, name, age, price, fnm, link);
+                form.Show();
+            }
         }
     }
 }

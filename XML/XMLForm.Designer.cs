@@ -39,15 +39,8 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.buttonExit = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.tabControl3 = new System.Windows.Forms.TabControl();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.labelOpisanieMaster = new System.Windows.Forms.Label();
-            this.labelOpisanieDataBirth = new System.Windows.Forms.Label();
-            this.labelOpisaniePrice = new System.Windows.Forms.Label();
-            this.labelOpisanieName = new System.Windows.Forms.Label();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.treeView1 = new System.Windows.Forms.TreeView();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabControlCenter = new System.Windows.Forms.TabControl();
             this.tabPageTabel = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -79,16 +72,15 @@
             this.radioButtonViolins = new System.Windows.Forms.RadioButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tabPageSettings = new System.Windows.Forms.TabPage();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.labelSettings = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.tabControl3.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
             this.tabControlCenter.SuspendLayout();
             this.tabPageTabel.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -98,6 +90,8 @@
             this.tabPageAddInstrument.SuspendLayout();
             this.tabPageAddMaster.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.tabPageSettings.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -124,8 +118,8 @@
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.buttonExit, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.treeView1, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.tabControl3, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -134,6 +128,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 75F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(312, 720);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
@@ -150,105 +145,10 @@
             this.buttonExit.UseVisualStyleBackColor = true;
             this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(4, 3);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(304, 165);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
-            // tabControl3
-            // 
-            this.tabControl3.Controls.Add(this.tabPage3);
-            this.tabControl3.Controls.Add(this.tabPage4);
-            this.tabControl3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl3.ItemSize = new System.Drawing.Size(200, 30);
-            this.tabControl3.Location = new System.Drawing.Point(4, 173);
-            this.tabControl3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabControl3.Name = "tabControl3";
-            this.tabControl3.SelectedIndex = 0;
-            this.tabControl3.Size = new System.Drawing.Size(304, 503);
-            this.tabControl3.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
-            this.tabControl3.TabIndex = 4;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.labelOpisanieMaster);
-            this.tabPage3.Controls.Add(this.labelOpisanieDataBirth);
-            this.tabPage3.Controls.Add(this.labelOpisaniePrice);
-            this.tabPage3.Controls.Add(this.labelOpisanieName);
-            this.tabPage3.Location = new System.Drawing.Point(4, 34);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage3.Size = new System.Drawing.Size(296, 465);
-            this.tabPage3.TabIndex = 0;
-            this.tabPage3.Text = "Описание";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // labelOpisanieMaster
-            // 
-            this.labelOpisanieMaster.AutoSize = true;
-            this.labelOpisanieMaster.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelOpisanieMaster.Location = new System.Drawing.Point(24, 95);
-            this.labelOpisanieMaster.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelOpisanieMaster.Name = "labelOpisanieMaster";
-            this.labelOpisanieMaster.Size = new System.Drawing.Size(72, 20);
-            this.labelOpisanieMaster.TabIndex = 3;
-            this.labelOpisanieMaster.Text = "Мастер";
-            // 
-            // labelOpisanieDataBirth
-            // 
-            this.labelOpisanieDataBirth.AutoSize = true;
-            this.labelOpisanieDataBirth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelOpisanieDataBirth.Location = new System.Drawing.Point(24, 70);
-            this.labelOpisanieDataBirth.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelOpisanieDataBirth.Name = "labelOpisanieDataBirth";
-            this.labelOpisanieDataBirth.Size = new System.Drawing.Size(111, 20);
-            this.labelOpisanieDataBirth.TabIndex = 2;
-            this.labelOpisanieDataBirth.Text = "ДД,ММ,ГГГГ";
-            // 
-            // labelOpisaniePrice
-            // 
-            this.labelOpisaniePrice.AutoSize = true;
-            this.labelOpisaniePrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelOpisaniePrice.Location = new System.Drawing.Point(24, 42);
-            this.labelOpisaniePrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelOpisaniePrice.Name = "labelOpisaniePrice";
-            this.labelOpisaniePrice.Size = new System.Drawing.Size(52, 20);
-            this.labelOpisaniePrice.TabIndex = 1;
-            this.labelOpisaniePrice.Text = "Цена";
-            // 
-            // labelOpisanieName
-            // 
-            this.labelOpisanieName.AutoSize = true;
-            this.labelOpisanieName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelOpisanieName.Location = new System.Drawing.Point(24, 18);
-            this.labelOpisanieName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelOpisanieName.Name = "labelOpisanieName";
-            this.labelOpisanieName.Size = new System.Drawing.Size(91, 20);
-            this.labelOpisanieName.TabIndex = 0;
-            this.labelOpisanieName.Text = "Название";
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.treeView1);
-            this.tabPage4.Location = new System.Drawing.Point(4, 34);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage4.Size = new System.Drawing.Size(296, 465);
-            this.tabPage4.TabIndex = 1;
-            this.tabPage4.Text = "Дерево";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
             // treeView1
             // 
             this.treeView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.treeView1.Location = new System.Drawing.Point(3, 2);
+            this.treeView1.Location = new System.Drawing.Point(5, 175);
             this.treeView1.Margin = new System.Windows.Forms.Padding(4);
             this.treeView1.Name = "treeView1";
             treeNode1.Name = "Violins";
@@ -264,8 +164,18 @@
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
             treeNode4,
             treeNode5});
-            this.treeView1.Size = new System.Drawing.Size(290, 461);
+            this.treeView1.Size = new System.Drawing.Size(302, 499);
             this.treeView1.TabIndex = 1;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Location = new System.Drawing.Point(4, 3);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(304, 165);
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
             // 
             // tabControlCenter
             // 
@@ -638,6 +548,8 @@
             // 
             // tabPageSettings
             // 
+            this.tabPageSettings.Controls.Add(this.tableLayoutPanel3);
+            this.tabPageSettings.Controls.Add(this.labelSettings);
             this.tabPageSettings.Cursor = System.Windows.Forms.Cursors.Default;
             this.tabPageSettings.Location = new System.Drawing.Point(4, 54);
             this.tabPageSettings.Name = "tabPageSettings";
@@ -647,9 +559,42 @@
             this.tabPageSettings.Text = "Настройки";
             this.tabPageSettings.UseVisualStyleBackColor = true;
             // 
-            // openFileDialog1
+            // tableLayoutPanel3
             // 
-            this.openFileDialog1.FileName = "openFileDialog1";
+            this.tableLayoutPanel3.AutoScroll = true;
+            this.tableLayoutPanel3.ColumnCount = 2;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Controls.Add(this.label1, 0, 0);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 102);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 2;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(950, 557);
+            this.tableLayoutPanel3.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(469, 40);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Тема";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // labelSettings
+            // 
+            this.labelSettings.Dock = System.Windows.Forms.DockStyle.Top;
+            this.labelSettings.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelSettings.Location = new System.Drawing.Point(3, 3);
+            this.labelSettings.Name = "labelSettings";
+            this.labelSettings.Size = new System.Drawing.Size(950, 99);
+            this.labelSettings.TabIndex = 1;
+            this.labelSettings.Text = "Настройки";
             // 
             // XMLForm
             // 
@@ -668,10 +613,6 @@
             this.splitContainer1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.tabControl3.ResumeLayout(false);
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
-            this.tabPage4.ResumeLayout(false);
             this.tabControlCenter.ResumeLayout(false);
             this.tabPageTabel.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
@@ -684,6 +625,8 @@
             this.tabPageAddMaster.ResumeLayout(false);
             this.tabPageAddMaster.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.tabPageSettings.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -693,7 +636,6 @@
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.TabControl tabControlCenter;
         private System.Windows.Forms.TabPage tabPageTabel;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button buttonExit;
         private System.Windows.Forms.TabPage tabPageAddInfo;
@@ -709,9 +651,6 @@
         private System.Windows.Forms.TabControl tabControlAddElement;
         private System.Windows.Forms.TabPage tabPageAddInstrument;
         private System.Windows.Forms.TabPage tabPageAddMaster;
-        private System.Windows.Forms.TabControl tabControl3;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.TextBox textBoxNameInstrument;
         private System.Windows.Forms.Label labelNamement;
         private System.Windows.Forms.Label labelMaster;
@@ -721,11 +660,6 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.ComboBox comboBoxMasters;
         private System.Windows.Forms.Button buttonToRegistrationInstrument;
-        private System.Windows.Forms.Label labelOpisanieMaster;
-        private System.Windows.Forms.Label labelOpisanieDataBirth;
-        private System.Windows.Forms.Label labelOpisaniePrice;
-        private System.Windows.Forms.Label labelOpisanieName;
-        private System.Windows.Forms.TreeView treeView1;
         private System.Windows.Forms.Button buttonToRegistrationMaster;
         private System.Windows.Forms.Label labelMidlenameMaster;
         private System.Windows.Forms.TextBox textBoxMidlenameMaster;
@@ -734,6 +668,10 @@
         private System.Windows.Forms.Label labelNamementMaster;
         private System.Windows.Forms.TextBox textBoxNameMaster;
         private System.Windows.Forms.TabPage tabPageSettings;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelSettings;
+        private System.Windows.Forms.TreeView treeView1;
     }
 }
 
