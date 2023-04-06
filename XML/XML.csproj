@@ -84,6 +84,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="bin\Debug\XML.exe.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -104,21 +105,33 @@
     <Analyzer Include="..\..\..\..\..\..\Program Files %28x86%29\MySQL\MySQL Connector NET 8.0.32\Assemblies\v4.8\MySql.Data.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\Debug\Drums.xml" />
     <Content Include="bin\Debug\DrumsVolume\drum1.wav" />
     <Content Include="bin\Debug\DrumsVolume\drum2.wav" />
     <Content Include="bin\Debug\DrumsVolume\drum3.wav" />
     <Content Include="bin\Debug\DrumsVolume\drum4.wav" />
     <Content Include="bin\Debug\DrumsVolume\drum5.wav" />
+    <Content Include="bin\Debug\Flutes.xml" />
     <Content Include="bin\Debug\FlutesVolume\flute1.wav" />
     <Content Include="bin\Debug\FlutesVolume\flute2.wav" />
     <Content Include="bin\Debug\FlutesVolume\flute3.wav" />
     <Content Include="bin\Debug\FlutesVolume\flute4.wav" />
     <Content Include="bin\Debug\FlutesVolume\flute5.wav" />
     <Content Include="bin\Debug\FlutesVolume\flute6.wav" />
+    <Content Include="bin\Debug\Masters.xml" />
+    <Content Include="bin\Debug\Violins.xml" />
     <Content Include="bin\Debug\ViolinsVolume\Violin1.wav" />
     <Content Include="bin\Debug\ViolinsVolume\Violin2.wav" />
     <Content Include="bin\Debug\ViolinsVolume\Violin3.wav" />
+    <Content Include="bin\Debug\XML.exe" />
+    <Content Include="bin\Debug\XML.pdb" />
+    <Content Include="bin\Drums.xml" />
+    <Content Include="bin\Masters.xml" />
+    <Content Include="bin\Violins.xml" />
     <Content Include="xml.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
