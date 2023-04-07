@@ -100,9 +100,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadata Include="Connected Services\" />
-  </ItemGroup>
-  <ItemGroup>
     <Analyzer Include="..\..\..\..\..\..\Program Files %28x86%29\MySQL\MySQL Connector NET 8.0.32\Assemblies\v4.8\MySql.Data.dll" />
   </ItemGroup>
   <ItemGroup>
