@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Drawing;
+using System.IO;
 using System.Windows.Forms;
 
 namespace XML
@@ -55,10 +57,10 @@ namespace XML
             {
                 comboBoxTabelVariant.Items.Add(item);
             }
-            document.SetViolin(WorkSerisation.ReaderViolinList());
-            document.SetDrum(WorkSerisation.ReaderDrumList());
-            document.SetMaster(WorkSerisation.ReaderMasterList());
-            document.SetFlute(WorkSerisation.ReaderFluteList());
+            document.AddElenet(WorkSerisation.ReaderViolinList());
+            document.AddElenet(WorkSerisation.ReaderDrumList());
+            document.AddElenet(WorkSerisation.ReaderMasterList());
+            document.AddElenet(WorkSerisation.ReaderFluteList());
             dataSourseTabel.Add(arrayVariant[0], TranslateToTDataable.GetDataTabel(document.GetViolins()));
             dataSourseTabel.Add(arrayVariant[1], TranslateToTDataable.GetDataTabel(document.GetDrums()));
             dataSourseTabel.Add(arrayVariant[2], TranslateToTDataable.GetDataTabel(document.GetMasters()));
@@ -135,6 +137,8 @@ namespace XML
         {
             string variant = comboBoxTabelVariant.SelectedItem.ToString();
             dataGridView1.DataSource = dataSourseTabel[variant];
+            string way = System.IO.Directory.GetCurrentDirectory() + @"\images\image_" + variant + ".png";
+            pictureBox1.Image = Image.FromFile(way);
         }
 
         private void buttonToRegistrationInstrument_Click(object sender, EventArgs e)
@@ -152,17 +156,17 @@ namespace XML
             {
                 if (radioButtonViolins.Checked == true)
                 {
-                    document.SetViolin(new Violin(name, id, price, date, master));
+                    document.AddElenet(new Violin(name, id, price, date, master));
                     dataSourseTabel[document.GetArrayType()[0]] = TranslateToTDataable.GetDataTabel(document.GetViolins());
                 }
                 else if (radioButtonDrums.Checked == true)
                 {
-                    document.SetDrum(new Drum(name, id, price, date, master));
+                    document.AddElenet(new Drum(name, id, price, date, master));
                     dataSourseTabel[document.GetArrayType()[1]] = TranslateToTDataable.GetDataTabel(document.GetDrums());
                 }
                 else if (radioButtonFlutes.Checked == true)
                 {
-                    document.SetFlute(new Flute(name, id, price, date, master));
+                    document.AddElenet(new Flute(name, id, price, date, master));
                     dataSourseTabel[document.GetArrayType()[3]] = TranslateToTDataable.GetDataTabel(document.GetDrums());
                 }
                 MessageBox.Show("Данные добавлены");
@@ -181,7 +185,7 @@ namespace XML
             }
             else
             {
-                document.SetMaster(new Master(id, name, surname, midlename));
+                document.AddElenet(new Master(id, name, surname, midlename));
                 dataSourseTabel[document.GetArrayType()[2]] = TranslateToTDataable.GetDataTabel(document.GetMasters());
                 LoadMasters();
                 MessageBox.Show("Данные добавлены");
@@ -190,7 +194,7 @@ namespace XML
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (comboBoxTabelVariant.Text != document.GetArrayType()[2]) 
+            if (comboBoxTabelVariant.Text != document.GetArrayType()[2])
             {
                 int indexLine = e.RowIndex;
                 InstrumentForm form = InstrumentForm.GetInstrument();

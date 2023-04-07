@@ -24,4 +24,16 @@
       <Midlename>Сергеевич</Midlename>
     </Master>
   </Drum>
+  <Drum>
+    <Name>New Style special for Adelina</Name>
+    <Id xsi:nil="true" />
+    <Price>1</Price>
+    <Age>1994-06-08T00:00:00</Age>
+    <Master>
+      <Id>3</Id>
+      <Name>Самира </Name>
+      <Surname>Мурзагулова</Surname>
+      <Midlename>Арнуровна</Midlename>
+    </Master>
+  </Drum>
 </ArrayOfDrum>

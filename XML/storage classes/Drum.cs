@@ -9,6 +9,7 @@ namespace XML
     [Serializable]
     public class Drum : Instrument
     {
+
         public Drum() : base() { }
         public Drum(string name, int? id, decimal price, DateTime age, Master master) : base(name, id, price, age, master) { }
     }

@@ -47,32 +47,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Drum.cs" />
-    <Compile Include="Flute.cs" />
-    <Compile Include="Instrument.cs" />
-    <Compile Include="InstrumentForm.cs">
+    <Compile Include="storage classes\Drum.cs" />
+    <Compile Include="storage classes\Flute.cs" />
+    <Compile Include="storage classes\Instrument.cs" />
+    <Compile Include="Forms\InstrumentForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InstrumentForm.Designer.cs">
+    <Compile Include="Forms\InstrumentForm.Designer.cs">
       <DependentUpon>InstrumentForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Master.cs" />
-    <Compile Include="TranslateToTDataable.cs" />
-    <Compile Include="Violin.cs" />
-    <Compile Include="WorkSerisation.cs" />
-    <Compile Include="XMLDocument.cs" />
-    <Compile Include="XMLForm.cs">
+    <Compile Include="storage classes\Master.cs" />
+    <Compile Include="handler classes\TranslateToTDataable.cs" />
+    <Compile Include="storage classes\Violin.cs" />
+    <Compile Include="handler classes\WorkSerisation.cs" />
+    <Compile Include="storage classes\XMLDocument.cs" />
+    <Compile Include="Forms\XMLForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="XMLForm.Designer.cs">
+    <Compile Include="Forms\XMLForm.Designer.cs">
       <DependentUpon>XMLForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="InstrumentForm.resx">
+    <EmbeddedResource Include="Forms\InstrumentForm.resx">
       <DependentUpon>InstrumentForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="XMLForm.resx">
+    <EmbeddedResource Include="Forms\XMLForm.resx">
       <DependentUpon>XMLForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

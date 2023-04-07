@@ -14,7 +14,7 @@ namespace XML
     public partial class InstrumentForm : Form
     {
         private static InstrumentForm instance = null;
-        private static string Link = null;
+        private static Point pointCursor = new Point();
         private static SoundPlayer Player = null;
 
         private InstrumentForm()
@@ -60,6 +60,20 @@ namespace XML
         private void buttonStop_Click(object sender, EventArgs e)
         {
             Player.Stop();
+        }
+
+        private void labelNameForm_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                this.Left += e.X - pointCursor.X;
+                this.Top += e.Y - pointCursor.Y;
+            }
+        }
+
+        private void labelNameForm_MouseDown(object sender, MouseEventArgs e)
+        {
+            pointCursor = new Point(e.X, e.Y);
         }
     }
 }

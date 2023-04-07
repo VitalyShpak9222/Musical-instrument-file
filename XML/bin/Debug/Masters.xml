@@ -18,4 +18,10 @@
     <Surname>Афанисивич</Surname>
     <Midlename>Фет</Midlename>
   </Master>
+  <Master>
+    <Id>3</Id>
+    <Name>Самира </Name>
+    <Surname>Мурзагулова</Surname>
+    <Midlename>Арнуровна</Midlename>
+  </Master>
 </ArrayOfMaster>

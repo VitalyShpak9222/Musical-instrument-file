@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlTypes;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace XML
 {
@@ -98,42 +95,76 @@ namespace XML
             return Flutes;
         }
 
-        public void SetViolin(Violin violin)
+        public Object[][] GetAll() 
+        {
+            List<Object[]> list = new List<Object[]>();
+            int countViolin = Violins.Count();
+            int countDrum = Drums.Count();
+            int countMaster = Masters.Count();
+            int countFlute = Flutes.Count();
+            List<Object> timeListClass = new List<Object>();
+            for (int i = 0; i < countViolin; i++)
+            {
+                timeListClass.Add((Object)Violins[i]);
+            }
+            list.Add(timeListClass.ToArray());
+            timeListClass.Clear();
+            for (int i = 0; i < countDrum; i++)
+            {
+                timeListClass.Add((Object)Drums[i]);
+            }
+            list.Add(timeListClass.ToArray());
+            timeListClass.Clear();
+            for (int i = 0; i < countMaster; i++)
+            {
+                timeListClass.Add((Object)Masters[i]);
+            }
+            list.Add(timeListClass.ToArray());
+            timeListClass.Clear();
+            for (int i = 0; i < countFlute; i++)
+            {
+                timeListClass.Add((Object)Flutes[i]);
+            }
+            list.Add(timeListClass.ToArray());
+            return list.ToArray();
+        }
+
+        public void AddElenet(Violin violin)
         {
             Violins.Add(violin);
         }
 
-        public void SetViolin(List<Violin> violin)
+        public void AddElenet(List<Violin> violin)
         {
             Violins = violin;
         }
 
-        public void SetDrum(Drum drum)
+        public void AddElenet(Drum drum)
         {
             Drums.Add(drum);
         }
 
-        public void SetDrum(List<Drum> drum)
+        public void AddElenet(List<Drum> drum)
         {
             Drums = drum;
         }
 
-        public void SetMaster(Master master)
+        public void AddElenet(Master master)
         {
             Masters.Add(master);
         }
 
-        public void SetMaster(List<Master> master)
+        public void AddElenet(List<Master> master)
         {
             Masters = master;
         }
 
-        public void SetFlute(Flute flute)
+        public void AddElenet(Flute flute)
         {
             Flutes.Add(flute);
         }
 
-        public void SetFlute(List<Flute> flute)
+        public void AddElenet(List<Flute> flute)
         {
             Flutes = flute;
         }

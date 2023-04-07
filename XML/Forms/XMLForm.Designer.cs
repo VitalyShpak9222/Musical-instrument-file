@@ -1,4 +1,5 @@
-﻿namespace XML
+﻿
+namespace XML
 {
     partial class XMLForm
     {
@@ -28,19 +29,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Скрипки");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Барабаны");
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Флейты");
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Музыкальные инструменты", new System.Windows.Forms.TreeNode[] {
-            treeNode1,
-            treeNode2,
-            treeNode3});
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Мастера");
+            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Скрипки");
+            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Барабаны");
+            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Флейты");
+            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Музыкальные инструменты", new System.Windows.Forms.TreeNode[] {
+            treeNode11,
+            treeNode12,
+            treeNode13});
+            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("Мастера");
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.buttonExit = new System.Windows.Forms.Button();
             this.treeView1 = new System.Windows.Forms.TreeView();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabControlCenter = new System.Windows.Forms.TabControl();
             this.tabPageTabel = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -70,17 +70,17 @@
             this.radioButtonDrums = new System.Windows.Forms.RadioButton();
             this.radioButtonFlutes = new System.Windows.Forms.RadioButton();
             this.radioButtonViolins = new System.Windows.Forms.RadioButton();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tabPageSettings = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.labelSettings = new System.Windows.Forms.Label();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControlCenter.SuspendLayout();
             this.tabPageTabel.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -89,9 +89,10 @@
             this.tabControlAddElement.SuspendLayout();
             this.tabPageAddInstrument.SuspendLayout();
             this.tabPageAddMaster.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabPageSettings.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -109,7 +110,7 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.tabControlCenter);
             this.splitContainer1.Size = new System.Drawing.Size(1280, 720);
-            this.splitContainer1.SplitterDistance = 312;
+            this.splitContainer1.SplitterDistance = 203;
             this.splitContainer1.TabIndex = 0;
             // 
             // tableLayoutPanel1
@@ -119,7 +120,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.buttonExit, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.treeView1, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -129,7 +130,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 75F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(312, 720);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(203, 720);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // buttonExit
@@ -139,7 +140,7 @@
             this.buttonExit.Location = new System.Drawing.Point(4, 681);
             this.buttonExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonExit.Name = "buttonExit";
-            this.buttonExit.Size = new System.Drawing.Size(304, 36);
+            this.buttonExit.Size = new System.Drawing.Size(195, 36);
             this.buttonExit.TabIndex = 2;
             this.buttonExit.Text = "Выход";
             this.buttonExit.UseVisualStyleBackColor = true;
@@ -151,31 +152,21 @@
             this.treeView1.Location = new System.Drawing.Point(5, 175);
             this.treeView1.Margin = new System.Windows.Forms.Padding(4);
             this.treeView1.Name = "treeView1";
-            treeNode1.Name = "Violins";
-            treeNode1.Text = "Скрипки";
-            treeNode2.Name = "Drums";
-            treeNode2.Text = "Барабаны";
-            treeNode3.Name = "Flutes";
-            treeNode3.Text = "Флейты";
-            treeNode4.Name = "MusicInstrument";
-            treeNode4.Text = "Музыкальные инструменты";
-            treeNode5.Name = "Maters";
-            treeNode5.Text = "Мастера";
+            treeNode11.Name = "Violins";
+            treeNode11.Text = "Скрипки";
+            treeNode12.Name = "Drums";
+            treeNode12.Text = "Барабаны";
+            treeNode13.Name = "Flutes";
+            treeNode13.Text = "Флейты";
+            treeNode14.Name = "MusicInstrument";
+            treeNode14.Text = "Музыкальные инструменты";
+            treeNode15.Name = "Maters";
+            treeNode15.Text = "Мастера";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode4,
-            treeNode5});
-            this.treeView1.Size = new System.Drawing.Size(302, 499);
+            treeNode14,
+            treeNode15});
+            this.treeView1.Size = new System.Drawing.Size(193, 499);
             this.treeView1.TabIndex = 1;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(4, 3);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(304, 165);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
             // 
             // tabControlCenter
             // 
@@ -189,7 +180,7 @@
             this.tabControlCenter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabControlCenter.Name = "tabControlCenter";
             this.tabControlCenter.SelectedIndex = 0;
-            this.tabControlCenter.Size = new System.Drawing.Size(964, 720);
+            this.tabControlCenter.Size = new System.Drawing.Size(1073, 720);
             this.tabControlCenter.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabControlCenter.TabIndex = 0;
             // 
@@ -200,7 +191,7 @@
             this.tabPageTabel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPageTabel.Name = "tabPageTabel";
             this.tabPageTabel.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPageTabel.Size = new System.Drawing.Size(956, 662);
+            this.tabPageTabel.Size = new System.Drawing.Size(1065, 662);
             this.tabPageTabel.TabIndex = 1;
             this.tabPageTabel.Text = "Таблица";
             this.tabPageTabel.UseVisualStyleBackColor = true;
@@ -219,7 +210,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.382979F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 93.61702F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(950, 658);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1059, 658);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // comboBoxTabelVariant
@@ -229,7 +220,7 @@
             this.comboBoxTabelVariant.Location = new System.Drawing.Point(3, 2);
             this.comboBoxTabelVariant.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxTabelVariant.Name = "comboBoxTabelVariant";
-            this.comboBoxTabelVariant.Size = new System.Drawing.Size(944, 24);
+            this.comboBoxTabelVariant.Size = new System.Drawing.Size(1053, 24);
             this.comboBoxTabelVariant.TabIndex = 0;
             this.comboBoxTabelVariant.SelectionChangeCommitted += new System.EventHandler(this.comboBoxTabelVariant_SelectionChangeCommitted);
             // 
@@ -247,7 +238,7 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(944, 612);
+            this.dataGridView1.Size = new System.Drawing.Size(1053, 612);
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
@@ -258,7 +249,6 @@
             this.tabPageAddInfo.Controls.Add(this.radioButtonDrums);
             this.tabPageAddInfo.Controls.Add(this.radioButtonFlutes);
             this.tabPageAddInfo.Controls.Add(this.radioButtonViolins);
-            this.tabPageAddInfo.Controls.Add(this.pictureBox2);
             this.tabPageAddInfo.Location = new System.Drawing.Point(4, 54);
             this.tabPageAddInfo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPageAddInfo.Name = "tabPageAddInfo";
@@ -535,17 +525,6 @@
             this.radioButtonViolins.UseVisualStyleBackColor = true;
             this.radioButtonViolins.CheckedChanged += new System.EventHandler(this.radioButtonViolins_CheckedChanged);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(956, 662);
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
             // tabPageSettings
             // 
             this.tabPageSettings.Controls.Add(this.tableLayoutPanel3);
@@ -596,6 +575,31 @@
             this.labelSettings.TabIndex = 1;
             this.labelSettings.Text = "Настройки";
             // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.ColumnCount = 3;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 180F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Controls.Add(this.pictureBox1, 1, 0);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(4, 4);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 1;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(195, 163);
+            this.tableLayoutPanel4.TabIndex = 3;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Location = new System.Drawing.Point(10, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(174, 157);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // XMLForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -612,7 +616,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabControlCenter.ResumeLayout(false);
             this.tabPageTabel.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
@@ -624,9 +627,10 @@
             this.tabPageAddInstrument.PerformLayout();
             this.tabPageAddMaster.ResumeLayout(false);
             this.tabPageAddMaster.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabPageSettings.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -639,11 +643,9 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button buttonExit;
         private System.Windows.Forms.TabPage tabPageAddInfo;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.RadioButton radioButtonDrums;
         private System.Windows.Forms.RadioButton radioButtonFlutes;
         private System.Windows.Forms.RadioButton radioButtonViolins;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.ComboBox comboBoxTabelVariant;
         private System.Windows.Forms.DataGridView dataGridView1;
@@ -672,6 +674,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelSettings;
         private System.Windows.Forms.TreeView treeView1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
-
