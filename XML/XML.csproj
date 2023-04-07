@@ -118,6 +118,10 @@
     <Content Include="bin\Debug\FlutesVolume\flute4.wav" />
     <Content Include="bin\Debug\FlutesVolume\flute5.wav" />
     <Content Include="bin\Debug\FlutesVolume\flute6.wav" />
+    <Content Include="bin\Debug\Images\image_Барабаны.png" />
+    <Content Include="bin\Debug\Images\image_Мастера.png" />
+    <Content Include="bin\Debug\Images\image_Скрипки.png" />
+    <Content Include="bin\Debug\Images\image_Флейты.png" />
     <Content Include="bin\Debug\Masters.xml" />
     <Content Include="bin\Debug\Violins.xml" />
     <Content Include="bin\Debug\ViolinsVolume\Violin1.wav" />
