@@ -29,14 +29,14 @@ namespace XML
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Скрипки");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Барабаны");
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Флейты");
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Музыкальные инструменты", new System.Windows.Forms.TreeNode[] {
-            treeNode1,
-            treeNode2,
-            treeNode3});
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Мастера");
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Скрипки");
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Барабаны");
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Флейты");
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Музыкальные инструменты", new System.Windows.Forms.TreeNode[] {
+            treeNode6,
+            treeNode7,
+            treeNode8});
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Мастера");
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.buttonExit = new System.Windows.Forms.Button();
@@ -157,19 +157,19 @@ namespace XML
             this.treeView1.Location = new System.Drawing.Point(5, 175);
             this.treeView1.Margin = new System.Windows.Forms.Padding(4);
             this.treeView1.Name = "treeView1";
-            treeNode1.Name = "Violins";
-            treeNode1.Text = "Скрипки";
-            treeNode2.Name = "Drums";
-            treeNode2.Text = "Барабаны";
-            treeNode3.Name = "Flutes";
-            treeNode3.Text = "Флейты";
-            treeNode4.Name = "MusicInstrument";
-            treeNode4.Text = "Музыкальные инструменты";
-            treeNode5.Name = "Maters";
-            treeNode5.Text = "Мастера";
+            treeNode6.Name = "Violins";
+            treeNode6.Text = "Скрипки";
+            treeNode7.Name = "Drums";
+            treeNode7.Text = "Барабаны";
+            treeNode8.Name = "Flutes";
+            treeNode8.Text = "Флейты";
+            treeNode9.Name = "MusicInstrument";
+            treeNode9.Text = "Музыкальные инструменты";
+            treeNode10.Name = "Maters";
+            treeNode10.Text = "Мастера";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode4,
-            treeNode5});
+            treeNode9,
+            treeNode10});
             this.treeView1.Size = new System.Drawing.Size(193, 499);
             this.treeView1.TabIndex = 1;
             // 
